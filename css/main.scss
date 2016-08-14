@@ -34,13 +34,15 @@ body{
   background-repeat: repeat-y;;
   background-size:100% 1.5em;
   background-color:$white;
-  color: $black70;
+  color: $black80;
 }
 
 
 span.kern{
   letter-spacing:.02em;
 }
+
+
 
 
 // LOGO ANIMATION
@@ -387,12 +389,16 @@ animation-delay:650ms;
 		display:-webkit-flex;
 	}
 	#pupil{
-		width:10%;
-		height:10%;
+		width:.5em;
+		height:.5em;
 		background-color:$black;
-		margin:3.25em auto;
+		margin:2.5em auto;
 		border-radius:100%;
-
+    @include breakpoint(l) {
+      width:.6em;
+  		height:.6em;
+      margin:3.25em auto;
+    };
 	}
 	.eye-bracket{
 		position:relative;
@@ -413,35 +419,31 @@ animation-delay:650ms;
 	#bracket-L{
 		&:before{right:0%;
 			-webkit-transform:rotate(25deg);
-			-webkit-transform-origin: 0% 50%;
+			-webkit-transform-origin: top left;
 			-moz-transform:rotate(25deg);
 			-moz-transform-origin: 0% 50%;
 			transform:rotate(25deg);
-			transform-origin: 0% 50%;
-			bottom:-.08rem;}
+			transform-origin: top left;
+			bottom:-.1rem;}
 		&:after{right:0%;
 			-webkit-transform:rotate(-25deg);
-			-webkit-transform-origin: 0% 50%;
+			-webkit-transform-origin: bottom left;
 			transform:rotate(-25deg);
-			transform-origin: 0% 50%;
-			top:-.08rem;}
+			transform-origin: bottom left;
+			top:-.1rem;}
 	}
 	#bracket-R{
 		&:before{left:0%;
 			-webkit-transform:rotate(25deg);
-			-webkit-transform-origin: 100% 50%;
-			-moz-transform:rotate(25deg);
-			-moz-transform-origin: 100% 50%;
+			-webkit-transform-origin: top right;
 			transform:rotate(25deg);
-			transform-origin: 100% 50%;
-			bottom:-.15rem;}
+			transform-origin: top right;
+			bottom:-.1rem;}
 		&:after{left:0%;
 			-webkit-transform:rotate(-25deg);
-			-webkit-transform-origin: 100% 50%;
-			-moz-transform:rotate(-25deg);
-			-moz-transform-origin: 100% 50%;
+			-webkit-transform-origin: bottom right;
 			transform:rotate(-25deg);
-			transform-origin: 100% 50%;
-			top:-.15rem;}
+			transform-origin: bottom right;
+			top:-.1rem;}
 	}
 }

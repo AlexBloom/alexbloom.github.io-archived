@@ -15,6 +15,27 @@ tumblr-username: alexbloom
 medium-username: alexbloom
 github-username: alexbloom
 
+# Gems
+gems:
+#  - jekyll-assets
+# - autoprefixer-rails
+
+#assets:
+#  compress:
+#    css: false | true | default - development: false, production: true
+#    js: false | true | default - development: false, production: true
+#  cache: false | directory | default: .asset-cache
+#  prefix: "/assets"
+#  assets:
+#    - "*.png"
+#    - "bundle.css"
+#  digest: true
+#  sources:
+#    - "_assets/folder"
 
 # Build settings
 markdown: kramdown
+
+# Exclusions from Build
+exclude: [Gemfile, Gemfile.lock nmp-debug, gulpfile, .gitignore, node_modules, gulpfile.js]
+

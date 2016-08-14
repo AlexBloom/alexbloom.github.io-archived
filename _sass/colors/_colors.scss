@@ -1,5 +1,6 @@
 // BRAND COLORS
-$primary:#5CB7CC;
+$primary:#33d4c5;
+//$primary:#428284;
 $secondary:#246246;
 
 .primary{
@@ -14,6 +15,10 @@ $secondary:#246246;
 .bg-secondary{
   background-color:$secondary;
 }
+
+// Nice Gradients from the generator
+//linear-gradient(45deg, rgb(239, 114, 244), rgb(106, 232, 255)); background-color: rgb(106, 232, 255);"
+
 // UTILITY COLORS
 $black: #000;
 .black  {color:$black;}
